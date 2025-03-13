@@ -25,6 +25,10 @@ namespace BetterDecorador
 
                 Console.WriteLine(Decor(s,dec,i));
             }
+            else
+            {
+                Console.WriteLine(Decor());
+            }
         }
         /// <summary>
         /// creates phrase with given requisites
@@ -42,6 +46,11 @@ namespace BetterDecorador
                 decs += dec;
             }
             return $"{decs} {s} {decs}";
+            
+        }
+        private static string Decor()
+        {
+            return Decor("User did not specify args!", '=', 3);
         }
     }
 }
