@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace BetterDecorador
 {
@@ -6,13 +7,17 @@ namespace BetterDecorador
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine(Decor("Good Morning!", '*', 2));
-            Console.WriteLine(Decor("Good Morning!", '.', 2));
+            Console.WriteLine(Decor("Good Morning!", '*'));
+            Console.WriteLine(Decor("Good Morning!", '.'));
         }
         private static string Decor(string s, char dec, int i)
-        {
-
-            return $"{dec*i} {s} {dec+i}";
+        {   
+            string decs = "";
+            foreach (i in decs)
+            {
+                decs += dec
+            }
+            return $"{decs} {s} {decs}";
         }
     }
 }
