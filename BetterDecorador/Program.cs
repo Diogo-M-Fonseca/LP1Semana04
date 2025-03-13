@@ -7,15 +7,16 @@ namespace BetterDecorador
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine(Decor("Good Morning!", '*'));
-            Console.WriteLine(Decor("Good Morning!", '.'));
+            Console.WriteLine(Decor("Good Morning!", '*', 2));
+            Console.WriteLine(Decor("Good Morning!", '.', 2));
         }
         private static string Decor(string s, char dec, int i)
         {   
             string decs = "";
-            foreach (i in decs)
+            int n;
+            for (n= 0; n < i; n++)
             {
-                decs += dec
+                decs += dec;
             }
             return $"{decs} {s} {decs}";
         }
