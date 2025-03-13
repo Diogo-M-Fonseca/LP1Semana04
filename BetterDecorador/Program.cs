@@ -5,6 +5,13 @@ namespace BetterDecorador
 {
     public class Program
     {
+        /// <summary>
+        /// collect input from console and put it in a array
+        /// if the array length is ==3 then is collects the input 
+        /// then he converts them into the appropriate type of variable
+        /// and prints the result
+        /// </summary>
+        /// <param name="args"></param>
         private static void Main(string[] args)
         {
             if (args.Length == 3)
@@ -19,6 +26,13 @@ namespace BetterDecorador
                 Console.WriteLine(Decor(s,dec,i));
             }
         }
+        /// <summary>
+        /// creates phrase with given requisites
+        /// </summary>
+        /// <param name="s">a string representing the phrase</param>
+        /// <param name="dec">a char representing the symbols in the start and end of the phrase</param>
+        /// <param name="i">an int representing the amount of times the symbol will be repeated</param>
+        /// <returns></returns>
         private static string Decor(string s, char dec, int i)
         {   
             string decs = "";
