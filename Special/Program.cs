@@ -6,7 +6,8 @@ namespace Special
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP1!");
+            Console.WriteLine("Insert n-th number of the special sequence:");
+            int i = int.Parse(Console.ReadLine());
         }
     }
 }
