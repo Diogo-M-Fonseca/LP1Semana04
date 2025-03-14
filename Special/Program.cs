@@ -15,7 +15,7 @@ namespace Special
                 return 0;
             if (n == 1)
                 return 1;
-            return GetSpecial(n-1) + 2 * (n-2);
+            return GetSpecial(n-1) + 2 * GetSpecial(n-2);
         }
     }
 }
